@@ -138,15 +138,34 @@
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-08-05T13:15:14-07:00"><a href="/2015/08/05/welcome-to-octopress.html">August 05, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About Mark Evans">Mark Evans</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2015-08-05T14:10:50-07:00"><a href="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html">August 05, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="/about/" title="About Mark Evans">Mark Evans</a></span></span>
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="/2015/08/05/welcome-to-octopress.html" rel="bookmark" title="Welcome to Octopress" itemprop="url">Welcome to Octopress</a></h1>
+      <h1 class="entry-title"><a href="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" rel="bookmark" title="Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy" itemprop="url">Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy</a></h1>
     
   </header>
   <div class="entry-content">
-    <h1 id="trying-to-figure-out-octopress">Trying to figure out OctoPress</h1>
+    <h1 id="overview">Overview</h1>
+
+<p>For the past few years our application has been served well by the good folks at <a href="https://www.cosentry.com/">Cosentry</a>, but as our team grows and technology that simplifies devops improves, we find our selves wanting to move in that direction.</p>
+
+<p>Here begins our journey…</p>
+
+<h2 id="current-setup">Current Setup</h2>
+
+<ul>
+  <li>1 Database Server</li>
+  <li>1 Webserver</li>
+  <li>.Net MVC Application</li>
+  <li>Frontend Code is a mixture of AngularJS &amp; good old fashion html/javascript/jquery.</li>
+  <li>Database migrations handled with a home rolled package similar to this: <a href="http://dbup.github.io/">http://dbup.github.io/</a></li>
+  <li>Github for hosting our git repos.</li>
+  <li>Jenkins for CI &amp; Build w/ triggers on master / dev branches.</li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
