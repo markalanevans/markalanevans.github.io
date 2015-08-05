@@ -1,2 +1,2 @@
-bundle exec jekylly build
+bundle exec jekyll build
 bundle exec octopress deploy
