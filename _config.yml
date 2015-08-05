@@ -1,0 +1,40 @@
+title:            Hacking Day To Day
+description:      A bit of everything I do.
+disqus_shortname: markalanevans
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:              #markalanevans.github.io
+
+# Owner/author information
+owner:
+  name:           Mark Evans
+  avatar:         avatar.png
+  bio:            "Still learning..."
+  email:          mark@markalanevans.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        markalanevans
+  facebook:       mrkevans
+  github:         markalanevans
+  stackexchange:  
+  linkedin:       mrkevans
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:    +yourid
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Los_Angeles
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# Amount of posts to show on home page
+paginate: 5
+exclude: [vendor]
