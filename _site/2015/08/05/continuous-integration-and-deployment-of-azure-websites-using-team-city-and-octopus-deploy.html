@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Welcome to Octopress &#8211; Blazing Fingers</title>
+<title>Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy &#8211; Blazing Fingers</title>
 <meta name="description" content="Pushing buttons and breaking things...">
 <meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="/images/">
-<meta name="twitter:title" content="Welcome to Octopress">
+<meta name="twitter:title" content="Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy">
 <meta name="twitter:description" content="Pushing buttons and breaking things...">
 <meta name="twitter:creator" content="@markalanevans">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome to Octopress">
+<meta property="og:title" content="Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy">
 <meta property="og:description" content="Pushing buttons and breaking things...">
-<meta property="og:url" content="/2015/08/05/welcome-to-octopress.html">
+<meta property="og:url" content="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html">
 <meta property="og:site_name" content="Blazing Fingers">
 
 
 
 
 
-<link rel="canonical" href="/2015/08/05/welcome-to-octopress.html">
+<link rel="canonical" href="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Blazing Fingers Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -123,23 +123,68 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="/2015/08/05/welcome-to-octopress.html" rel="bookmark" title="Welcome to Octopress">Welcome to Octopress</a></h1>
+          <h1 class="entry-title"><a href="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" rel="bookmark" title="Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy">Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2015-08-05T13:15:14-07:00">August 05, 2015</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2015-08-05T14:10:50-07:00">August 05, 2015</time></span></h2>
         
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <h1 id="trying-to-figure-out-octopress">Trying to figure out OctoPress</h1>
+      <h1 id="overview">Overview</h1>
+
+<p>For the past few years our application has been served well by the good folks at <a href="https://www.cosentry.com/">Cosentry</a>, but as our team grows and technology that simplifies devops improves, we find our selves wanting to move in that direction.</p>
+
+<p>Here begins our journey…</p>
+
+<h2 id="current-setup">Current Setup</h2>
+
+<h4 id="hardware">Hardware</h4>
+<ul>
+  <li>1 Database Server</li>
+  <li>1 Webserver</li>
+</ul>
+
+<h4 id="application">Application</h4>
+<ul>
+  <li>.Net MVC Application</li>
+  <li>Frontend Code is a mixture of AngularJS &amp; good old fashion html/javascript/jquery.</li>
+  <li>Database migrations handled with a home rolled package similar to this: <a href="http://dbup.github.io/">http://dbup.github.io/</a></li>
+</ul>
+
+<h4 id="management--continous-deploymentintegration">Management &amp; Continous Deployment/Integration</h4>
+<ul>
+  <li>Github for hosting our git repos.</li>
+  <li>Jenkins for CI &amp; Build w/ triggers on master / dev branches.</li>
+</ul>
+
+<h4 id="environments">Environments</h4>
+
+<ul>
+  <li>Production - Used for production.</li>
+  <li>Integration - Used for staging.</li>
+</ul>
+
+<h1 id="ideal-setup">Ideal Setup</h1>
+<p>Using Azures cloud services</p>
+
+<ul>
+  <li>Azure Development App Service
+SQL Server Hosted on Azure</li>
+  <li>Azure Production App Service
+SQL Server Hosted on Azure</li>
+  <li>TeamCity for Continuous Integration</li>
+  <li>OctopusDeploy for Continous Deployments</li>
+</ul>
+
 
       <footer class="entry-meta">
         <span class="entry-tags"></span>
         
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/2015/08/05/welcome-to-octopress.html" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/2015/08/05/welcome-to-octopress.html" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=/2015/08/05/welcome-to-octopress.html" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -159,6 +204,18 @@
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/assets/js/scripts.min.js"></script>
 
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66019800-1', 'auto');  
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
 
 
 

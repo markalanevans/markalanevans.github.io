@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-08-05T13:59:19-07:00</updated>
+<updated>2015-08-05T14:37:45-07:00</updated>
 <id>/</id>
 <author>
   <name>Mark Evans</name>
@@ -14,20 +14,65 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Welcome to Octopress]]></title>
- <link rel="alternate" type="text/html" href="/2015/08/05/welcome-to-octopress.html" />
-  <id>/2015/08/05/welcome-to-octopress</id>
-  <published>2015-08-05T13:15:14-07:00</published>
-  <updated>2015-08-05T13:15:14-07:00</updated>
+  <title type="html"><![CDATA[Continuous Integration & Deployment of Azure Websites Using Team City and Octopus Deploy]]></title>
+ <link rel="alternate" type="text/html" href="/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html" />
+  <id>/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy</id>
+  <published>2015-08-05T14:10:50-07:00</published>
+  <updated>2015-08-05T14:10:50-07:00</updated>
   <author>
     <name>Mark Evans</name>
     <uri></uri>
     <email>mark@markalanevans.com</email>
   </author>
   <content type="html">
-    &lt;h1 id=&quot;trying-to-figure-out-octopress&quot;&gt;Trying to figure out OctoPress&lt;/h1&gt;
+    &lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/2015/08/05/welcome-to-octopress.html&quot;&gt;Welcome to Octopress&lt;/a&gt; was originally published by Mark Evans at &lt;a href=&quot;&quot;&gt;Blazing Fingers&lt;/a&gt; on August 05, 2015.&lt;/p&gt;
+&lt;p&gt;For the past few years our application has been served well by the good folks at &lt;a href=&quot;https://www.cosentry.com/&quot;&gt;Cosentry&lt;/a&gt;, but as our team grows and technology that simplifies devops improves, we find our selves wanting to move in that direction.&lt;/p&gt;
+
+&lt;p&gt;Here begins our journey…&lt;/p&gt;
+
+&lt;h2 id=&quot;current-setup&quot;&gt;Current Setup&lt;/h2&gt;
+
+&lt;h4 id=&quot;hardware&quot;&gt;Hardware&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 Database Server&lt;/li&gt;
+  &lt;li&gt;1 Webserver&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;application&quot;&gt;Application&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;.Net MVC Application&lt;/li&gt;
+  &lt;li&gt;Frontend Code is a mixture of AngularJS &amp;amp; good old fashion html/javascript/jquery.&lt;/li&gt;
+  &lt;li&gt;Database migrations handled with a home rolled package similar to this: &lt;a href=&quot;http://dbup.github.io/&quot;&gt;http://dbup.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;management--continous-deploymentintegration&quot;&gt;Management &amp;amp; Continous Deployment/Integration&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Github for hosting our git repos.&lt;/li&gt;
+  &lt;li&gt;Jenkins for CI &amp;amp; Build w/ triggers on master / dev branches.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;environments&quot;&gt;Environments&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Production - Used for production.&lt;/li&gt;
+  &lt;li&gt;Integration - Used for staging.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;ideal-setup&quot;&gt;Ideal Setup&lt;/h1&gt;
+&lt;p&gt;Using Azures cloud services&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Azure Development App Service
+SQL Server Hosted on Azure&lt;/li&gt;
+  &lt;li&gt;Azure Production App Service
+SQL Server Hosted on Azure&lt;/li&gt;
+  &lt;li&gt;TeamCity for Continuous Integration&lt;/li&gt;
+  &lt;li&gt;OctopusDeploy for Continous Deployments&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/2015/08/05/continuous-integration-and-deployment-of-azure-websites-using-team-city-and-octopus-deploy.html&quot;&gt;Continuous Integration &amp; Deployment of Azure Websites Using Team City and Octopus Deploy&lt;/a&gt; was originally published by Mark Evans at &lt;a href=&quot;&quot;&gt;Blazing Fingers&lt;/a&gt; on August 05, 2015.&lt;/p&gt;
   </content>
 </entry>
 
