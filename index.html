@@ -154,17 +154,43 @@
 
 <h2 id="current-setup">Current Setup</h2>
 
+<h4 id="hardware">Hardware</h4>
 <ul>
   <li>1 Database Server</li>
   <li>1 Webserver</li>
+</ul>
+
+<h4 id="application">Application</h4>
+<ul>
   <li>.Net MVC Application</li>
   <li>Frontend Code is a mixture of AngularJS &amp; good old fashion html/javascript/jquery.</li>
   <li>Database migrations handled with a home rolled package similar to this: <a href="http://dbup.github.io/">http://dbup.github.io/</a></li>
+</ul>
+
+<h4 id="management--continous-deploymentintegration">Management &amp; Continous Deployment/Integration</h4>
+<ul>
   <li>Github for hosting our git repos.</li>
   <li>Jenkins for CI &amp; Build w/ triggers on master / dev branches.</li>
 </ul>
 
-<h2 id="goals">Goals</h2>
+<h4 id="environments">Environments</h4>
+
+<ul>
+  <li>Production - Used for production.</li>
+  <li>Integration - Used for staging.</li>
+</ul>
+
+<h1 id="ideal-setup">Ideal Setup</h1>
+<p>Using Azures cloud services</p>
+
+<ul>
+  <li>Azure Development App Service
+SQL Server Hosted on Azure</li>
+  <li>Azure Production App Service
+SQL Server Hosted on Azure</li>
+  <li>TeamCity for Continuous Integration</li>
+  <li>OctopusDeploy for Continous Deployments</li>
+</ul>
 
 
   </div><!-- /.entry-content -->
